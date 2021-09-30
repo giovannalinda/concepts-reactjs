@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import TechItem from './TechItem';
-class TechList extends Component {
+function TechList() {
   state = {
     newTech: '',
     techs: [
@@ -28,8 +28,6 @@ class TechList extends Component {
   handleDelete = (tech) => {
     this.setState({ techs: this.state.techs.filter(t => t !== tech) })
   }
-
-  render() {
     return(
       <form onSubmit={this.handleSubmit}>
         <ul>
@@ -43,7 +41,6 @@ class TechList extends Component {
         <button type="submit">Enviar</button>
       </form>
     );
-  }
 }
 
 export default TechList;
