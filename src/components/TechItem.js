@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types'
+import { FiCheck } from 'react-icons/fi'
+import '../App.css'
 function TechItem({ tech, onDelete }) {
   return(
     <li>
       {tech}
-      <button onClick={onDelete}>x</button>
+      <button className='check' onClick={onDelete}><FiCheck size={14}/></button>
     </li>
   )
 }

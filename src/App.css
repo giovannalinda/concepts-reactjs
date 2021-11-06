@@ -1,12 +1,52 @@
 body {
-  background: #000;
-  color: #7159c1;
-  font-family:Arial, Helvetica, sans-serif;
+  background: #fafafa;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 600px) {
-  body {
-    background: #7159c1;
-    color: #fff;
-  }
+button {
+  cursor: pointer;
+}
+
+::selection {
+  color: #fafafa;
+  background: rgb(63, 238, 63);
+}
+
+svg {
+  color: rgb(63, 238, 63);
+}
+
+.check {
+  background: none;
+  border: none;
+  margin: 0 0 0 5px;
+}
+
+.add {
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(63, 238, 63);
+  color: #fafafa;
+  margin: 5px;
+}
+
+input {
+  width: 170px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 0 0 15px;
+  margin: 0 0 0 20px;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid rgb(63, 238, 63);
+  color: #000;
 }

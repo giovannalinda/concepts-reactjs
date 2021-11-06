@@ -45,7 +45,8 @@ class TechList extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className='form' onSubmit={this.handleSubmit}>
+        <h1>Lista de tarefas</h1>
         <ul>
           {this.state.techs.map(tech =>
             <TechItem 
@@ -63,7 +64,7 @@ class TechList extends Component {
           value={this.state.newTech}
           autoFocus
         />
-        <button type="submit">Adicionar</button>
+        <button className='add' type="submit">Adicionar</button>
       </form>
     )
   }  
